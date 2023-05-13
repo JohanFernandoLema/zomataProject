@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======= HEADER ELEMENT ======= */
+body {
+  font-family: poppins, 'sans-serif';
+}
+.zomatoNavigation {
+  background-image: linear-gradient(
+      transparent,
+      hsl(20 0% 0% / 0.3),
+      hsl(0 0% 0% / 0.7)
+    ),
+    url(/images/shutterstock_348320018@2x.png);
+  background-size: cover;
+  height: 70vh;
+  text-transform: capitalize;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav button {
+  padding: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  color: #fff;
+  border: none;
+  margin-top: 1.3rem;
+  margin-right: 2rem;
+  position: relative;
+  animation-name: slideRight;
+  animation-duration: 3s;
+}
+nav button:nth-child(2) {
+  margin-right: 5rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 0 2rem;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  top: 10%;
+}
+.content .restaurantTitle {
+  font-size: 4rem;
+  color: white;
+  border: 1rem solid saddlebrown;
+  padding: 0.4rem;
+  position: relative;
+  animation-name: slideDown;
+  animation-duration: 2s;
+}
+.content p {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 3rem;
+  position: relative;
+  animation-name: slideTop;
+  animation-duration: 3s;
+  z-index: 0;
+}
+.content input {
+  margin-left: 2rem;
+  height: 4rem;
+  width: 16rem;
+  padding-left: 1rem;
+  outline: none;
+  z-index: 9999;
+}
+.content .inputChild {
+  padding-left: 2rem;
+  width: 25%;
+}
+.content .searchIcon {
+  position: relative;
+  left: 60px;
+}
+/* ================ MAIN CONTENT ============== */
+.galery {
+  width: 40%;
+  height: 20vh;
+  /* object-fit: contain; */
+}
+
+/* ============ KEYFRAMES =========== */
+@keyframes slideDown {
+  0% {
+    top: -300px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
