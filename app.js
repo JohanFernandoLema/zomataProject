@@ -40,7 +40,11 @@ const meals = [
 const mainContent = document.querySelector('.mainContent')
 
 window.addEventListener('DOMContentLoaded', () => {
-  let mealsList = meals.map((list) => {
+  displayMeals(meals)
+})
+
+function displayMeals(mealArray) {
+  let mealsList = mealArray.map((list) => {
     return `<div class="d-flex flex-row cards mb-5">
           <img
             src=${list.img}
@@ -58,4 +62,4 @@ window.addEventListener('DOMContentLoaded', () => {
   console.log(mealsList)
   mealsList = mealsList.join('')
   mainContent.innerHTML = mealsList
-})
+}
