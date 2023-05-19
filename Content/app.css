@@ -100,8 +100,11 @@ body div h1 {
 .cards {
   background-color: var(--cards-color);
   box-shadow: var(--shadow);
-  width: 40%;
   margin-right: 1rem;
+}
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .mainContent div h3 {
   color: var(--heading-color);
