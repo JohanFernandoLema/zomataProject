@@ -33,11 +33,15 @@ nav button {
 }
 div .container input {
   height: 4rem;
+  width: 25%;
   padding-left: 2rem;
   outline: none;
   position: relative;
   animation-name: slideTop;
   animation-duration: 3s;
+}
+div .container input:nth-child(3) {
+  width: 60%;
 }
 nav button:nth-child(2) {
   border: 2px solid white;
@@ -130,7 +134,7 @@ body div h1 {
 @media screen and (max-width: 900px) {
   header .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 4fr;
     width: 100%;
     position: relative;
   }
@@ -150,5 +154,11 @@ body div h1 {
   .mainContent {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  div .container input {
+    width: 100%;
+  }
+  div .container input:nth-child(3) {
+    width: 100%;
   }
 }
