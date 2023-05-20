@@ -26,64 +26,32 @@ body:not(.mainContent div p) {
   height: 70vh;
   text-transform: capitalize;
 }
-nav {
-  display: flex;
-  justify-content: flex-end;
-}
 nav button {
-  padding: 1rem;
-  font-size: 2rem;
-  background: transparent;
-  color: #fff;
-  border: none;
-  margin-top: 1.3rem;
-  margin-right: 2rem;
   position: relative;
   animation-name: slideDown;
   animation-duration: 1s;
 }
+div .container input {
+  height: 4rem;
+  padding-left: 2rem;
+  outline: none;
+  position: relative;
+  animation-name: slideTop;
+  animation-duration: 3s;
+}
 nav button:nth-child(2) {
-  margin-right: 5rem;
   border: 2px solid white;
   border-radius: 1rem;
-  padding: 0 2rem;
 }
 
-.content {
-  text-align: center;
-  position: relative;
-  top: 10%;
-}
-.content .restaurantTitle {
+div .restaurantTitle {
   font-size: 4rem;
   color: white;
   padding: 0.4rem;
 }
-.content p {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #fff;
-  margin-top: 3rem;
+div div .searchIcon {
   position: relative;
-}
-.content input {
-  margin-left: 2rem;
-  height: 4rem;
-  width: 16rem;
-  padding-left: 1rem;
-  outline: none;
-  animation-name: slideTop;
-  animation-duration: 3s;
-  z-index: 0;
-  position: relative;
-}
-.content .inputChild {
-  padding-left: 2rem;
-  width: 25%;
-}
-.content .searchIcon {
-  position: relative;
-  left: 60px;
+  left: 25px;
   animation-name: slideTop;
   animation-duration: 3s;
   z-index: 1;
