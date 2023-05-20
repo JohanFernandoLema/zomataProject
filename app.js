@@ -52,7 +52,7 @@ function displayMeals(mealArray) {
             class="galery me-2"
           />
           <div>
-            <div class="mt-5 d-inline-block m-0 ps-2 pe-2">
+            <div class="p-4 d-inline-block">
               <h3 class="fw-bold">${list.category}</h3>
               <p>${list.desc}</p>
             </div>
