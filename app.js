@@ -14,19 +14,19 @@ const meals = [
   {
     id: 3,
     category: 'snacks',
-    img: './images/shutterstock_476864884@2x.png',
+    img: './images/snacks.jpeg',
     desc: 'Start your day with exclusive breakfast options',
   },
   {
     id: 4,
     category: 'dinner',
-    img: './images/shutterstock_476864884@2x.png',
+    img: './images/dinner.jpg',
     desc: 'Start your day with exclusive breakfast options',
   },
   {
     id: 5,
     category: 'drinks',
-    img: './images/shutterstock_476864884@2x.png',
+    img: './images/cocktails.jpg',
     desc: 'Start your day with exclusive breakfast options',
   },
   {
