@@ -19,21 +19,23 @@
   <header>
     <div class="zomatoNavigation">
       <!-- BUTTONS -->
-      <nav class="d-flex justify-content-end">
+      <nav class="d-lg-flex justify-content-end d-none">
         <button
-          class="me-4 mt-4 p-3 rounded-3 bg-transparent border-0 text-white h5"
+          class="me-3 mt-2 rounded-3 bg-transparent border-0 text-white h6 me-lg-4 mt-lg-4 p-lg-3"
         >
           Login
         </button>
-        <button class="me-5 mt-4 p-3 bg-transparent text-white h5">
+        <button
+          class="mt-2 px-2 py-1 me-3 bg-transparent text-white h6 me-lg-5 mt-lg-4 p-lg-3"
+        >
           Sing up
         </button>
       </nav>
 
       <!-- LOGO -->
-      <div class="text-center mt-5">
-        <span class="restaurantTitle text-white mt-5">ZOMATO</span>
-        <p class="h2 text-white mt-4 mb-4">
+      <div class="text-center mt-lg-5">
+        <span class="restaurantTitle text-white">ZOMATO</span>
+        <p class="h2 text-white mb-4 mt-5">
           find the best restaurants, cafes, and bars
         </p>
         <div class="container">
@@ -56,7 +58,12 @@
   <body>
     <div class="container mt-3">
       <h1 class="mt-4 mb-3">Quick Searches</h1>
-      <h3 class="text-muted">Discover restaurants by their type of meal</h3>
+      <h3 class="text-muted d-none d-lg-flex">
+        Discover restaurants by their type of meal
+      </h3>
+      <h5 class="text-muted d-lg-none">
+        Discover restaurants by their type of meal
+      </h5>
       <div class="mainContent mt-4"></div>
     </div>
   </body>
