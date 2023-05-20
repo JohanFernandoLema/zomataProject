@@ -107,3 +107,29 @@ body div h1 {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1420px) {
+  div .restaurantTitle {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1320px) {
+  div .restaurantTitle {
+    font-size: 3rem;
+  }
+  div .container input {
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mainContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
