@@ -33,19 +33,19 @@ nav button {
 }
 div .container input {
   height: 4rem;
-  width: 25%;
+  width: 30%;
   padding-left: 2rem;
   outline: none;
   position: relative;
-  animation-name: slideTop;
-  animation-duration: 3s;
+
+  margin-top: 1rem;
 }
 div .container input:nth-child(3) {
-  width: 60%;
+  width: 50%;
 }
 nav button:nth-child(2) {
   border: 2px solid white;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 div .restaurantTitle {
@@ -56,13 +56,13 @@ div .restaurantTitle {
 div div .searchIcon {
   position: relative;
   left: 25px;
-  animation-name: slideTop;
-  animation-duration: 3s;
+  top: 2.2rem;
+
   z-index: 1;
 }
 /* ================ MAIN CONTENT ============== */
-body div .galery {
-  width: 45%;
+body div .gallery {
+  width: 50%;
   height: auto;
   /* object-fit: contain; */
 }
@@ -130,11 +130,32 @@ body div h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  header .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  div .container input {
+    width: 100%;
+  }
+  div .container input:nth-child(3) {
+    width: 100%;
+  }
+  div div .searchIcon {
+    top: 74px;
+    position: absolute;
+    animation-name: slideTop;
+    animation-duration: 3s;
+    z-index: 1;
+  }
+  header .container input:first-child {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 900px) {
   header .container {
     display: grid;
-    grid-template-columns: 4fr;
+    grid-template-columns: 1fr;
     width: 100%;
     position: relative;
   }

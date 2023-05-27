@@ -49,7 +49,7 @@ function displayMeals(mealArray) {
           <img
             src=${list.img}
             alt=${list.category}
-            class="galery me-2"
+            class="gallery me-2"
           />
           <div>
             <div class="p-4 d-inline-block">
