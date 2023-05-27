@@ -37,8 +37,7 @@ div .container input {
   padding-left: 2rem;
   outline: none;
   position: relative;
-
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 div .container input:nth-child(3) {
   width: 50%;
@@ -56,8 +55,6 @@ div .restaurantTitle {
 div div .searchIcon {
   position: relative;
   left: 25px;
-  top: 2.2rem;
-
   z-index: 1;
 }
 /* ================ MAIN CONTENT ============== */
@@ -112,11 +109,6 @@ body div h1 {
   }
 }
 
-@media screen and (max-width: 1420px) {
-  div .restaurantTitle {
-    font-size: 4rem;
-  }
-}
 @media screen and (max-width: 1320px) {
   div .restaurantTitle {
     font-size: 3rem;
@@ -124,16 +116,15 @@ body div h1 {
   div .container input {
     height: 3rem;
   }
+  div div .searchIcon {
+    position: absolute;
+    z-index: 1;
+  }
 }
 @media screen and (max-width: 1200px) {
   .mainContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  header .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    position: relative;
   }
   div .container input {
     width: 100%;
@@ -142,14 +133,13 @@ body div h1 {
     width: 100%;
   }
   div div .searchIcon {
-    top: 74px;
-    position: absolute;
-    animation-name: slideTop;
-    animation-duration: 3s;
+    top: 44px;
+    left: -450px;
+    position: relative;
     z-index: 1;
   }
-  header .container input:first-child {
-    margin-bottom: 15px;
+  div .container input {
+    margin-top: 0.5rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -166,20 +156,14 @@ body div h1 {
     margin-top: 5rem;
   }
   div div .searchIcon {
-    top: 74px;
-    position: absolute;
-    animation-name: slideTop;
-    animation-duration: 3s;
+    top: 5.8rem;
+    font-size: small;
     z-index: 1;
+    position: absolute;
+    left: 16px;
   }
   .mainContent {
     display: grid;
     grid-template-columns: 1fr;
-  }
-  div .container input {
-    width: 100%;
-  }
-  div .container input:nth-child(3) {
-    width: 100%;
   }
 }
